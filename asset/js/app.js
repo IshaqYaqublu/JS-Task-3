@@ -28,11 +28,18 @@
 // }
 let count = 0;
 function decrease(){
-
-    count--;
-    document.getElementById("counter").innerHTML = count ;
-    document.getElementById("counter").style.color = "red"
-    
+    // Decrease olanda min deyer 1 olur. 
+    if(count === 1)
+    {   
+        count = 1;
+        document.getElementById("counter").innerHTML = count ;
+        document.getElementById("counter").style.color = "red"
+    }
+    else{
+        count--;
+       document.getElementById("counter").innerHTML = count ;
+       document.getElementById("counter").style.color = "red"
+    }
 }
 function reset(){
     count= 0;
